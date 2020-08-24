@@ -1,0 +1,5 @@
+nav#main-nav.main-nav
+  ul#main-menu.main-menu
+    each page in pages
+      li.main-menu__item
+        a(href=`/${page}`) = page
