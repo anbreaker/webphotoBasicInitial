@@ -111,10 +111,16 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-body { background-color: #222; color: azure; min-height: 100vh; display: grid; grid-template-columns: 15% 85%; grid-template-rows: 60px 1fr; }
+body { background-color: #222; color: azure; min-height: 100vh; }
 
-.header { padding: 1em 0; background-color: royalblue; grid-column: 2 / 3; grid-row: 1 / 2; }
+@media screen and (min-width: 1024px) { body { display: grid; grid-template-columns: 15% 85%; grid-template-rows: 60px 1fr; } }
 
-.sidebar { padding: 0.5em 0; background-color: crimson; grid-column: 1 / 2; grid-row: 1 / -1; }
+.header { padding: 1em 0; }
 
-.main { padding: 0.5em 0; background-color: seagreen; grid-column: 2 / 3; grid-row: 2 / 3; }
+@media screen and (min-width: 1024px) { .header { background-color: royalblue; grid-column: 2 / 3; grid-row: 1 / 2; } }
+
+@media screen and (min-width: 1024px) { .sidebar { padding: 0.5em 0; background-color: crimson; grid-column: 1 / 2; grid-row: 1 / -1; } }
+
+.main { padding: 0.5em 0; }
+
+@media screen and (min-width: 1024px) { .main { background-color: seagreen; grid-column: 2 / 3; grid-row: 2 / 3; } }

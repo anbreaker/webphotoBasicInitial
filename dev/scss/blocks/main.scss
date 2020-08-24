@@ -1,6 +1,9 @@
 .main {
   padding: 0.5em 0;
-  background-color: seagreen;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+
+  @include laptop {
+    background-color: seagreen;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 }
