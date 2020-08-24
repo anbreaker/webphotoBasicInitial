@@ -6,4 +6,4 @@
 - In the project directory open a terminal and type npm install
 - Once the installation is finished write the command npm run gulp
 
-## Web photography basic, This website is a construction from the beginning, following good practices.
+### Web photography basic, This website is a construction from the beginning, following good practices.
