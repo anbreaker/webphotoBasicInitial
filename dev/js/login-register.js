@@ -37,6 +37,9 @@ if (registerModal) {
 if (loginForm) {
   loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    setTimeout(() => {
+      event.target.sendButton.blur();
+    }, 150);
     console.log("Send");
   });
 }
@@ -44,6 +47,9 @@ if (loginForm) {
 if (registerForm) {
   registerForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    setTimeout(() => {
+      event.target.registerButton.blur();
+    }, 150);
     console.log("Send");
   });
 }
