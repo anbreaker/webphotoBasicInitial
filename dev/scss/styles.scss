@@ -1,9 +1,16 @@
-@import "mixins/breakpoints.scss";
-@import "mixins/reset-list.scss";
+// Configuration style
+@import "config/colors";
+@import "config/fonts";
 
+// Mixins
+@import "mixins/breakpoints";
+@import "mixins/reset-list";
+
+// Base Styles
 @import "base/normalize";
 @import "base/base";
 
+// Blocks
 @import "blocks/header";
 @import "blocks/topbar";
 @import "blocks/toggle-menu";
