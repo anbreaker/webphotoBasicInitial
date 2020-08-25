@@ -1,5 +1,8 @@
 nav#main-nav.main-nav
   ul#main-menu.main-menu
-    each page in pages
+    each page, index in pages
       li.main-menu__item
-        a(href=`/${page}`) = page
+        if index == 0
+          a(href='/').main-menu__link= page
+        else
+          a(href=`/${page}.html`).main-menu__link= page
