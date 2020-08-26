@@ -1,23 +1,26 @@
 include ../config/config
-<!DOCTYPE html>
-html(lang='en')
+doctype html
+html(lang="en")
   head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Document
-    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.14.0/css/all.css' 
-    integrity='sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc' 
-    crossorigin='anonymous')
-    link(rel='stylesheet' href='css/styles.css')
+    link(
+      rel="stylesheet",
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css",
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc",
+      crossorigin="anonymous"
+    )
+    link(rel="stylesheet", href="css/styles.css")
   body
     header#header.header 
-      a(href='/').logo
-        img(src='./assets/img/logo.png', alt='web logo')
+      a.logo(href="/")
+        img(src="./assets/img/logo.png", alt="web logo")
       #topbar.topbar
-        .topbar__icon(data-type='login')
+        .topbar__icon(data-type="login")
           i.fa.fa-user
           span Log in
-        .topbar__icon(data-type='register')
+        .topbar__icon(data-type="register")
           i.fa.fa-user-plus
           span Register
         .toggle-menu
@@ -25,7 +28,7 @@ html(lang='en')
             .first-bar
             .second-bar
             .third-bar
-    div#sidebar.sidebar
+    #sidebar.sidebar
       block menu
     main.main
       block title
@@ -33,4 +36,4 @@ html(lang='en')
     include ../includes/login-modal
     include ../includes/register-modal
     block scripts
-    script(src='js/scripts-min.js')
+    script(src="js/scripts-min.js")

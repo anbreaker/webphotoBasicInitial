@@ -1,15 +1,15 @@
 //- Contenedor modal de toda la ventana
-.lightbox#register-modal
+#register-modal.lightbox
   //- Formulario de registro
   form#register-form.form
     .form__field
-      label(for='register-email').form__label Email
-      input#register-email(type='email' name='email').form__input
+      label.form__label(for="register-email") Email
+      input#register-email.form__input(type="email", name="email")
     .form__field
-      label(for='register-password').form__label Password
-      input#register-password(type='password' name='password').form__input
+      label.form__label(for="register-password") Password
+      input#register-password.form__input(type="password", name="password")
     .form__field
-      label(for='register-password-2').form__label Repeat password
-      input#register-password-2(type='password' name='password-2').form__input
+      label.form__label(for="register-password-2") Repeat password
+      input#register-password-2.form__input(type="password", name="password-2")
     .form__field
-      input(type='submit' name='registerButton' value='Send').form__submit
+      input.form__submit(type="submit", name="registerButton", value="Send")
