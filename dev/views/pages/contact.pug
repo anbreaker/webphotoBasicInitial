@@ -1,5 +1,6 @@
 extends ../templates/template
 block menu
+  - pageActive = 'contact'
   include ../includes/main-menu
 block title
   h1.title Contact
@@ -17,6 +18,8 @@ block main
         input(type="submit" value="Send").form__submit
     .contact__map
       iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24847.602459864327!2d-7.0052315726755054!3d38.87937873627132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16e43eac5f354d%3A0x688c7e359714a4a9!2sBadajoz!5e0!3m2!1ses!2ses!4v1598443350822!5m2!1ses!2ses' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+      a(href="https://www.google.es/maps/place/Badajoz/@38.8793787,-7.0052316,14z/data=!3m1!4b1!4m5!3m4!1s0xd16e43eac5f354d:0x688c7e359714a4a9!8m2!3d38.8794495!4d-6.9706535" target="_blank") 
+        img(src="assets/map.jpg", alt="mapa").contact__img-map
     .social
       .social__icon
           i.fab.fa-twitter-square
