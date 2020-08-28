@@ -36,6 +36,7 @@
     cursor: pointer;
     border-radius: 0.25rem;
     transition: transform 0.2s;
+    align-self: center;
 
     &:active,
     &:focus {
@@ -46,7 +47,7 @@
 
 .form-contact {
   display: grid;
-  gap: 30px;
+  column-gap: 30px;
   width: 320px;
   margin: 0 auto;
   justify-items: center;

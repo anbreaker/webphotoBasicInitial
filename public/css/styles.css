@@ -199,11 +199,11 @@ body { background-color: var(--background-color); color: var(--text-color); min-
 
 .form__input { margin-bottom: 2rem; border-bottom: 1px solid var(--text-color); }
 
-.form__submit { display: inline-block; padding: 0.5rem 1rem; color: var(--text-color); background-color: var(--primary-color); border: none; cursor: pointer; border-radius: 0.25rem; transition: transform 0.2s; }
+.form__submit { display: inline-block; padding: 0.5rem 1rem; color: var(--text-color); background-color: var(--primary-color); border: none; cursor: pointer; border-radius: 0.25rem; transition: transform 0.2s; align-self: center; }
 
 .form__submit:active, .form__submit:focus { transform: scale(0.9); }
 
-.form-contact { display: grid; gap: 30px; width: 320px; margin: 0 auto; justify-items: center; padding-top: 2rem; }
+.form-contact { display: grid; -moz-column-gap: 30px; column-gap: 30px; width: 320px; margin: 0 auto; justify-items: center; padding-top: 2rem; }
 
 @media screen and (min-width: 1024px) { .form-contact { grid-template-columns: repeat(2, 1fr); margin: 0 auto 2rem; width: 50%; } }
 
