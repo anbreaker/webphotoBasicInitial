@@ -24,7 +24,7 @@
     "autoprefixer": "^9.3.1",
     "babel-register": "^6.26.0",
     "browser-sync": "^2.26.12",
-    "browserslist": "^4.6.6",
+    "browserslist": "^4.16.5",
     "cssnano": "^4.1.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.0.0",
